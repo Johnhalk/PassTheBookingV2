@@ -3,6 +3,7 @@
 {% block content %}
     <div class='client'>
       <p>Client User: {{ clients }}</p>
+      <a class="btn btn-default" href="{% url 'client_edit' pk=clients.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
       <h1><a href="">{{ clients.first_name }}</a></h1>
       <p>Last name: {{ clients.last_name}}</p>
       <div class='date'>
@@ -10,5 +11,4 @@
       </div>
     </div>
     <p> Add in property list for client </p>
-
 {%endblock%}
