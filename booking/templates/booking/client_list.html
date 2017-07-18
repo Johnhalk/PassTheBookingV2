@@ -6,6 +6,13 @@
     <h1><a href="">Client information</a></h1>
 </div>
   <body>
-    <p>Placeholder for client information</p>
+    {% for clients in client %}
+        <div>
+            <p>Client: {{ clients.client }}</p>
+            <h1><a href="">{{ clients.first_name }}</a></h1>
+            <p>Last name: {{ clients.last_name}}</p>
+            <p>{{ clients.date_joined }}</p>
+        </div>
+    {% endfor %}
   </body>
 </html>
