@@ -1,0 +1,14 @@
+{% extends 'booking/base.html' %}
+
+{% block content %}
+    <div class='client'>
+      <p>Client User: {{ clients }}</p>
+      <h1><a href="">{{ clients.first_name }}</a></h1>
+      <p>Last name: {{ clients.last_name}}</p>
+      <div class='date'>
+        <p>{{ clients.date_joined }}</p>
+      </div>
+    </div>
+    <p> Add in property list for client </p>
+
+{%endblock%}

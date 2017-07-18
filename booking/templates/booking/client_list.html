@@ -1,18 +1,14 @@
-<html>
-  <head>
-      <title>Client list</title>
-  </head>
-  <div>
-    <h1><a href="">Client information</a></h1>
-</div>
-  <body>
-    {% for clients in client %}
-        <div>
-            <p>Client: {{ clients.client }}</p>
-            <h1><a href="">{{ clients.first_name }}</a></h1>
-            <p>Last name: {{ clients.last_name}}</p>
-            <p>{{ clients.date_joined }}</p>
-        </div>
-    {% endfor %}
-  </body>
-</html>
+{% extends 'booking/base.html' %}
+
+{% block content %}
+  {% for client in clients %}
+    <div class='client'>
+      <p>Client User: {{ client.clients }}</p>
+      <h1><a href="{% url 'client_detail' pk=client.pk %}">{{ client.first_name }}</a></h1>
+      <p>Last name: {{ client.last_name}}</p>
+      <div class='date'>
+        <p>{{ client.date_joined }}</p>
+      </div>
+    </div>
+  {% endfor %}
+{%endblock%}

@@ -3,7 +3,7 @@ from django.utils import timezone
 
 
 class Client(models.Model):
-    client = models.ForeignKey('auth.User')
+    clients = models.ForeignKey('auth.User')
     email = models.EmailField(('email address'), max_length=254, unique=True)
     first_name = models.CharField(('first name'), max_length=30, blank=True)
     last_name = models.CharField(('last name'), max_length=30, blank=True)
