@@ -1,0 +1,12 @@
+{% extends 'property/base.html' %}
+
+{% block content %}
+  {% for property in propertys %}
+    <div class='property'>
+      <h1><a href="">Owner: {{ property.owner}}</h1>
+      <p>City Location: {{ property.location_city}}</p>
+      <p>Address: {{ property.address}}</p>
+      <p>No. bedrooms: {{ property.number_of_bedrooms}}</p>
+    </div>
+  {% endfor %}
+{%endblock%}
