@@ -3,6 +3,7 @@
 {% block content %}
     <div class='property'>
       <h1><a href="">Owner: {{propertys.owner}}<a></h1>
+      <a class="btn btn-default" href="{% url 'property_edit' pk=propertys.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
       <p>City Location: {{propertys.location_city}}</p>
       <p>Address: {{propertys.Address}}</p>
       <p>No. bedrooms: {{propertys.number_of_bedrooms}}</p>
