@@ -34,9 +34,6 @@ def client_edit(request, pk):
         if form.is_valid():
             client = form.save(commit=False)
             client.clients = request.user
-            client.email = request.user
-            client.first_name = request.user
-            client.last_name = request.user
             client.date_joined = timezone.now()
             client.save()
             return redirect('client_detail', pk=client.pk)
