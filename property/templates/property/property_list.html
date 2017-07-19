@@ -3,7 +3,7 @@
 {% block content %}
   {% for property in propertys %}
     <div class='property'>
-      <h1><a href="">Owner: {{ property.owner}}</h1>
+      <h1><a href="{% url 'property_detail' pk=property.pk %}">Owner: {{ property.owner}}<a></h1>
       <p>City Location: {{ property.location_city}}</p>
       <p>Address: {{ property.address}}</p>
       <p>No. bedrooms: {{ property.number_of_bedrooms}}</p>
