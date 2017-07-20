@@ -2,13 +2,22 @@
 
 {% block content %}
     <div class='client'>
-      <p>Client User: {{ clients }}</p>
       <a class="btn btn-default" href="{% url 'client_edit' pk=clients.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-      <h1><a href="">{{ clients.first_name }}</a></h1>
+      <p>Client User: {{ clients }}</p>
+      <h1>First name: {{ clients.first_name }}</h1>
       <p>Last name: {{ clients.last_name}}</p>
       <div class='date'>
         <p>{{ clients.date_joined }}</p>
       </div>
+      <p> Staff: {{ clients.is_staff }}</p>
+      <p> Active: {{clients.is_active}} </p>
     </div>
-    <p> Add in property list for client </p>
+    <p> Properties registered to client: </p>
+      {% for properties in propertys %}
+        <div class = 'client' id='property-list'>
+          <h1><a href="{% url 'property_detail' pk=properties.pk %}"> City: {{ properties.location_city }}</a></h1>
+          <p>  Address: {{ properties.Address }}</p>
+          <p>  Number of bedrooms: {{ properties.number_of_bedrooms }}</p>
+        </div>
+      {% endfor %}
 {%endblock%}

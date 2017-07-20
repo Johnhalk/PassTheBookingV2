@@ -1,10 +1,9 @@
 {% extends 'book_property/base.html' %}
 
 {% block content %}
-  {% for booking in bookpropertys %}
+  {% for booking in bookings %}
     <div class='property'>
-      <h1><a href="{% url 'property_detail' pk=property.pk %}">Owner: {{ property.owner}}<a></h1>
-      <p>Property: {{ booking.property_booking}}</p>
+      <h1><a href="{% url 'bookproperty_detail' pk=booking.pk %}">Property: {{ booking.property_booking}}</a></h1>
       <p>Check in date: {{ booking.date_check_in}}</p>
       <p>Check out date: {{ booking.date_check_out}}</p>
       <p>Guest name: {{ booking.guest_name}}</p>

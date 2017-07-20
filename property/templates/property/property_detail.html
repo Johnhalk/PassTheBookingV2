@@ -2,10 +2,18 @@
 
 {% block content %}
     <div class='property'>
-      <h1><a href="">Owner: {{propertys.owner}}<a></h1>
+      <h1><a href="">Owner: {{propertys.owner}}</a></h1>
       <a class="btn btn-default" href="{% url 'property_edit' pk=propertys.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+      <p> Description: {{ propertys.description }} </p>
       <p>City Location: {{propertys.location_city}}</p>
       <p>Address: {{propertys.Address}}</p>
       <p>No. bedrooms: {{propertys.number_of_bedrooms}}</p>
+      <h1> Booking history for property: </h1>
+      {% for booking in bookings %}
+      <h1><a href="{% url 'bookproperty_detail' pk=booking.pk %}"> Property: {{ booking.property_booking }}</a></h1>
+      <p> Guest name: {{ booking.guest_name }}<p>
+      <p> Check in: {{ booking.date_check_in }}<p>
+      <p> Check out: {{ booking.date_check_out}}<p>
+        {%endfor%}
     </div>
 {%endblock%}

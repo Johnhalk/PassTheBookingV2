@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Property
 from .forms import PropertyForm
+from book_property.models import Bookproperty
 
 def property_list(request):
     propertys = Property.objects.all()
@@ -9,7 +10,8 @@ def property_list(request):
 
 def property_detail(request, pk):
     propertys = get_object_or_404(Property, pk=pk)
-    return render(request, 'property/property_detail.html', {'propertys': propertys})
+    bookings = Bookproperty.objects.filter(property_booking=pk)
+    return render(request, 'property/property_detail.html', {'propertys': propertys, 'bookings': bookings})
 
 def property_edit(request, pk):
     propertys = get_object_or_404(Property, pk=pk)

@@ -17,4 +17,4 @@ class Bookproperty(models.Model):
         self.save()
 
     def __str__(self):
-        return self.guest_name
+        return str(self.property_booking)

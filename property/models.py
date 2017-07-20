@@ -11,11 +11,10 @@ DateInput = partial(forms.DateInput, {'class': 'datepicker'})
 
 class Property(models.Model):
     owner = models.ForeignKey(Client, on_delete=models.CASCADE)
+    description = models.CharField(max_length=200)
     location_city = models.CharField(max_length=100)
     Address = models.CharField(max_length=150, unique=True)
     number_of_bedrooms = models.IntegerField()
-    start_date_availability = forms.DateField(widget=DateInput())
-    end_date_availability = forms.DateField(widget=DateInput())
 
     def publish(self):
         self.published_date = timezone.now()

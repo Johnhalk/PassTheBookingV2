@@ -3,15 +3,16 @@ from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Client
 from .forms import ClientForm
-
+from property.models import Property
 
 def client_list(request):
-    clients = Client.objects.filter(date_joined__lte=timezone.now())
+    clients = Client.objects.all()
     return render(request, 'booking/client_list.html', {'clients': clients})
 
-def client_detail(request, pk):
+def client_detail(request, pk, **kwargs):
     clients = get_object_or_404(Client, pk=pk)
-    return render(request, 'booking/client_detail.html', {'clients': clients})
+    propertys = Property.objects.filter(owner=pk)
+    return render(request, 'booking/client_detail.html', {'clients': clients, 'propertys': propertys})
 
 def client_new(request):
     if request.method == "POST":
