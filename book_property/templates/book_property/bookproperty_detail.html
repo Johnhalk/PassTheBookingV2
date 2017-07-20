@@ -3,7 +3,7 @@
 {% block content %}
     <div class='property'>
       <h1><a href="">Current property: {{ bookings.property_booking }}</a></h1>
-      <a class="btn btn-default" href=""><span class="glyphicon glyphicon-pencil"></span></a>
+      <a class="btn btn-default" href="{% url 'bookproperty_edit' pk=bookings.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
       <p>Guest name: {{ bookings.guest_name }}</p>
       <p>Check in date: {{ bookings.date_check_in }}</p>
       <p>Check out date: {{ bookings.date_check_out }}</p>
