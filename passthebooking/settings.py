@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'booking',
     'property',
     'book_property',
+    'home',
 ]
 
 MIDDLEWARE = [

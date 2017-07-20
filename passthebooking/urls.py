@@ -19,6 +19,7 @@ from django.conf.urls import include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', include('home.urls')),
     url(r'^client/', include('booking.urls')),
     url(r'^property/', include('property.urls')),
     url(r'^booking/', include('book_property.urls')),
