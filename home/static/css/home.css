@@ -1,3 +1,22 @@
 h1 {
     color: blue;
 }
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+img.img-responsive {
+    display: block;
+    margin: 0 auto;
+}
+
+.page-header {
+    background-color: #ffffff;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
