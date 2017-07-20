@@ -1,26 +1,26 @@
+{% load staticfiles %}
 <html>
     <head>
         <title>Pass the Bookings homepage</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
     </head>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="">PassTheBooking</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="client">Client Information</a></li>
+          <li><a href="property">Property Information</a></li>
+          <li><a href="booking">Booking Information</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <body>
-        <div>
-            <h1><a href="">Pass the Booking</a></h1>
-        </div>
-
-        <div>
-            <p>Client list information:</p>
-            <h2><a href="client">Client list</a></h2>
-        </div>
-
-
-        <div>
-            <p>Property list information:</p>
-            <h2><a href="property">Property list</a></h2>
-        </div>
-
-        <div>
-            <p>Booking list information:</p>
-            <h2><a href="booking">Booking list</a></h2>
-        </div>
+      <h1>Welcome to the internal system we use to manage all our clients, properties and bookings!</h1>
     </body>
 </html>
