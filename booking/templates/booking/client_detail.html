@@ -1,23 +1,29 @@
 {% extends 'booking/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
-    <div class='client'>
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="client-list">
+    <div class="w3-panel w3-leftbar w3-light-grey">
       <a class="btn btn-default" href="{% url 'client_edit' pk=clients.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-      <p>Client User: {{ clients }}</p>
-      <h1>First name: {{ clients.first_name }}</h1>
+      <h4 class="w3-wide" id='name'>First name: {{ clients.first_name }}</h4>
       <p>Last name: {{ clients.last_name}}</p>
-      <div class='date'>
-        <p>{{ clients.date_joined }}</p>
-      </div>
+      <p>{{ clients.date_joined }}</p>
       <p> Staff: {{ clients.is_staff }}</p>
       <p> Active: {{clients.is_active}} </p>
+      <h6 class='w3-wide' id='more-info'><a href="/client">Return</a></h6>
     </div>
-    <p> Properties registered to client: </p>
+  </div>
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="client-information">
+    <h2 class="w3-wide"><a href="/client">Properties registered to client:</a></h2>
+  </div>
       {% for properties in propertys %}
-        <div class = 'client' id='property-list'>
-          <h1><a href="{% url 'property_detail' pk=properties.pk %}"> City: {{ properties.location_city }}</a></h1>
-          <p>  Address: {{ properties.Address }}</p>
-          <p>  Number of bedrooms: {{ properties.number_of_bedrooms }}</p>
+      <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="client-list">
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <h4 class="w3-wide" id='name'> City: {{ properties.location_city }}</h4>
+          <h6><i class="fa fa-fw fa-bed"></i>Number of bedrooms: {{ properties.number_of_bedrooms }}</h6>
+          <p>Address: {{ properties.Address }}</p>
+          <p id='more-info'><a href="{% url 'property_detail' pk=properties.pk %}">More information on Property:</a><p>
         </div>
+      </div>
       {% endfor %}
 {%endblock%}

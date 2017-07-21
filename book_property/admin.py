@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Bookproperty
+from .models import Booking
 
-admin.site.register(Bookproperty)
+admin.site.register(Booking)

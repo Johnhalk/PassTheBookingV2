@@ -6,7 +6,7 @@ from property.models import Property
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 
-class Bookproperty(models.Model):
+class Booking(models.Model):
     property_booking = models.ForeignKey(Property, on_delete=models.CASCADE)
     date_check_in = models.DateField(default=datetime.date.today)
     date_check_out = models.DateField(default=datetime.date.today)
