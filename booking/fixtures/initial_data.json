@@ -1,0 +1,119 @@
+[
+  {
+    "model": "booking.client",
+    "pk": 1,
+    "fields": {
+      "email": "John_lenon@hotmail.com",
+      "first_name": "John",
+      "last_name": "Lennon"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 2,
+    "fields": {
+      "email": "Paul@hotmail.com",
+      "first_name": "Paul",
+      "last_name": "McCartney"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 3,
+    "fields": {
+      "email": "George@hotmail.com",
+      "first_name": "George",
+      "last_name": "Harrison"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 4,
+    "fields": {
+      "email": "Ringo@hotmail.com",
+      "first_name": "Ringo",
+      "last_name": "Starr"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 5,
+    "fields": {
+      "email": "Sandradee@hotmail.com",
+      "first_name": "Sandra",
+      "last_name": "Dee"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 6,
+    "fields": {
+      "email": "Bettywho@hotmail.com",
+      "first_name": "Betty",
+      "last_name": "Who"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 7,
+    "fields": {
+      "email": "EammonA@hotmail.com",
+      "first_name": "Eammon",
+      "last_name": "Atkinson"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 8,
+    "fields": {
+      "email": "Richard@hotmail.com",
+      "first_name": "Richard",
+      "last_name": "McRich"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 9,
+    "fields": {
+      "email": "HowardS@hotmail.com",
+      "first_name": "Howard",
+      "last_name": "Steal"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 10,
+    "fields": {
+      "email": "MorganT@hotmail.com",
+      "first_name": "Morgan",
+      "last_name": "Trum"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 11,
+    "fields": {
+      "email": "Yggrite@hotmail.com",
+      "first_name": "Ygritte",
+      "last_name": "Snow"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 12,
+    "fields": {
+      "email": "Arya@hotmail.com",
+      "first_name": "Arya",
+      "last_name": "Stark"
+    }
+  },
+  {
+    "model": "booking.client",
+    "pk": 13,
+    "fields": {
+      "email": "Cersei@hotmail.com",
+      "first_name": "Cersei",
+      "last_name": "Lannister"
+    }
+  }
+]

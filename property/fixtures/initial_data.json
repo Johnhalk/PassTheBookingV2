@@ -1,0 +1,12 @@
+[
+  {
+    "model": "property.property",
+    "pk": 1,
+    "fields": {
+      "owner": 1,
+      "description": "Beautiful 2 bedroom appartment.",
+      "location_city": "London",
+      "Address": "123 Fake Street, SW234GD",
+      "number_of_bedrooms": "2"
+    }
+  },
