@@ -1,0 +1,322 @@
+[
+  {
+    "model": "book_property.booking",
+    "pk": 1,
+    "fields": {
+      "property_booking": 1,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 2,
+    "fields": {
+      "property_booking": 1,
+      "date_check_in": "2016-12-21",
+      "date_check_out": "2017-01-03",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 3,
+    "fields": {
+      "property_booking": 4,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Trisha"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 4,
+    "fields": {
+      "property_booking": 3,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Katie"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 5,
+    "fields": {
+      "property_booking": 2,
+      "date_check_in": "2017-08-30",
+      "date_check_out": "2017-09-04",
+      "guest_name": "Gertrude"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 6,
+    "fields": {
+      "property_booking": 1,
+      "date_check_in": "2017-04-01",
+      "date_check_out": "2017-04-30",
+      "guest_name": "Optimus Prime"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 7,
+    "fields": {
+      "property_booking": 5,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Berret"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 8,
+    "fields": {
+      "property_booking": 6,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Britney"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 9,
+    "fields": {
+      "property_booking": 6,
+      "date_check_in": "2017-05-21",
+      "date_check_out": "2017-06-30",
+      "guest_name": "Gunther"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 10,
+    "fields": {
+      "property_booking": 7,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Ferdinand"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 11,
+    "fields": {
+      "property_booking": 7,
+      "date_check_in": "2017-07-03",
+      "date_check_out": "2017-07-25",
+      "guest_name": "Trisha"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 12,
+    "fields": {
+      "property_booking": 8,
+      "date_check_in": "2015-01-01",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Borris"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 13,
+    "fields": {
+      "property_booking": 9,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Eammon"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 14,
+    "fields": {
+      "property_booking": 10,
+      "date_check_in": "2017-02-04",
+      "date_check_out": "2017-07-21",
+      "guest_name": "Theo"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 15,
+    "fields": {
+      "property_booking": 11,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Trisha"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 16,
+    "fields": {
+      "property_booking": 12,
+      "date_check_in": "2017-07-15",
+      "date_check_out": "2017-10-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 17,
+    "fields": {
+      "property_booking": 13,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Roger"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 18,
+    "fields": {
+      "property_booking": 14,
+      "date_check_in": "2017-11-21",
+      "date_check_out": "2019-07-30",
+      "guest_name": "Theresa"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 19,
+    "fields": {
+      "property_booking": 15,
+      "date_check_in": "2017-07-20",
+      "date_check_out": "2017-08-15",
+      "guest_name": "Frans"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 20,
+    "fields": {
+      "property_booking": 16,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Juniper"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 21,
+    "fields": {
+      "property_booking": 17,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Jane"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 22,
+    "fields": {
+      "property_booking": 18,
+      "date_check_in": "2014-04-24",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Sophie"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 23,
+    "fields": {
+      "property_booking": 19,
+      "date_check_in": "2020-01-01",
+      "date_check_out": "2027-07-30",
+      "guest_name": "Obama"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 24,
+    "fields": {
+      "property_booking": 20,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Phil"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 25,
+    "fields": {
+      "property_booking": 2,
+      "date_check_in": "2017-06-21",
+      "date_check_out": "2017-07-03",
+      "guest_name": "Terrance"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 26,
+    "fields": {
+      "property_booking": 6,
+      "date_check_in": "2018-07-21",
+      "date_check_out": "2018-07-30",
+      "guest_name": "Bernie"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 27,
+    "fields": {
+      "property_booking": 8,
+      "date_check_in": "2018-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 28,
+    "fields": {
+      "property_booking": 10,
+      "date_check_in": "2017-11-01",
+      "date_check_out": "2017-11-21",
+      "guest_name": "Terrence"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 29,
+    "fields": {
+      "property_booking": 12,
+      "date_check_in": "2017-11-03",
+      "date_check_out": "2018-07-30",
+      "guest_name": "Ygritte"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 30,
+    "fields": {
+      "property_booking": 14,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 31,
+    "fields": {
+      "property_booking": 16,
+      "date_check_in": "2017-08-13",
+      "date_check_out": "2018-02-02",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "book_property.booking",
+    "pk": 32,
+    "fields": {
+      "property_booking": 18,
+      "date_check_in": "2017-04-20",
+      "date_check_out": "2017-04-25",
+      "guest_name": "Winfred"
+    }
+  }
+]

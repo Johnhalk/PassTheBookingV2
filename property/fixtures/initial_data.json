@@ -10,3 +10,213 @@
       "number_of_bedrooms": "2"
     }
   },
+  {
+    "model": "property.property",
+    "pk": 2,
+    "fields": {
+      "owner": 1,
+      "description": "Nothing is real...",
+      "location_city": "London",
+      "Address": "Strawberry Fields",
+      "number_of_bedrooms": "4"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 3,
+    "fields": {
+      "owner": 2,
+      "description": "Holiday home haven",
+      "location_city": "Liverpool",
+      "Address": "123 Mort Street, L34ND",
+      "number_of_bedrooms": "5"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 4,
+    "fields": {
+      "owner": 3,
+      "description": "OK home in heart of city center",
+      "location_city": "Birmingham",
+      "Address": "154 city walk, BR45MN",
+      "number_of_bedrooms": "1"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 5,
+    "fields": {
+      "owner": 4,
+      "description": "Django Villa for all cool coders",
+      "location_city": "London",
+      "Address": "13 Django road",
+      "number_of_bedrooms": "5"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 6,
+    "fields": {
+      "owner": 4,
+      "description": "Well presented appartment",
+      "location_city": "London",
+      "Address": "46 Fake Street, SW34GD",
+      "number_of_bedrooms": "1"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 7,
+    "fields": {
+      "owner": 5,
+      "description": "Good natured home",
+      "location_city": "Bristol",
+      "Address": "12 Tree land, TR33LND",
+      "number_of_bedrooms": "3"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 8,
+    "fields": {
+      "owner": 6,
+      "description": "Well presented cave.",
+      "location_city": "London",
+      "Address": "42 cave under bridge, C14VE",
+      "number_of_bedrooms": "1"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 9,
+    "fields": {
+      "owner": 7,
+      "description": "Well mannered home",
+      "location_city": "Glasgow",
+      "Address": "Haggis road, H4GG1S",
+      "number_of_bedrooms": "5"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 10,
+    "fields": {
+      "owner": 8,
+      "description": "Beautiful 2 bedroom appartment.",
+      "location_city": "London",
+      "Address": "123 Fake Street, SW234GD",
+      "number_of_bedrooms": "2"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 11,
+    "fields": {
+      "owner": 9,
+      "description": "Tatooine haven.",
+      "location_city": "Mos Eisley",
+      "Address": "Hutt Raider Lane",
+      "number_of_bedrooms": "4"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 12,
+    "fields": {
+      "owner": 10,
+      "description": "Well maintained english getaway",
+      "location_city": "Brighton",
+      "Address": "144 swanborough lane, BN45NM",
+      "number_of_bedrooms": "6"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 13,
+    "fields": {
+      "owner": 11,
+      "description": "Airy appartment with roof terrace.",
+      "location_city": "London",
+      "Address": "1 Baker Street, BA45ER",
+      "number_of_bedrooms": "2"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 14,
+    "fields": {
+      "owner": 12,
+      "description": "Castle getaway, quite cold.",
+      "location_city": "Winterfell",
+      "Address": "Winter is comming lane",
+      "number_of_bedrooms": "20"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 15,
+    "fields": {
+      "owner": 13,
+      "description": "Previously a High Sept, some assembly now required..",
+      "location_city": "Kings landing",
+      "Address": "12 Kings landing lane",
+      "number_of_bedrooms": "0"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 16,
+    "fields": {
+      "owner": 9,
+      "description": "Wordly view with hot tub.",
+      "location_city": "London",
+      "Address": "56 Bort Road, BG45TH",
+      "number_of_bedrooms": "4"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 17,
+    "fields": {
+      "owner": 10,
+      "description": "Well looking home",
+      "location_city": "London",
+      "Address": "56 Yeardly Avenue",
+      "number_of_bedrooms": "2"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 18,
+    "fields": {
+      "owner": 7,
+      "description": "Interesting avenue",
+      "location_city": "Bolton",
+      "Address": "5 Old Hall Clough, BL64LB",
+      "number_of_bedrooms": "5"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 19,
+    "fields": {
+      "owner": 4,
+      "description": "Beachy haven.",
+      "location_city": "Blackpool",
+      "Address": "45 beahcy haven, B54LP",
+      "number_of_bedrooms": "6"
+    }
+  },
+  {
+    "model": "property.property",
+    "pk": 20,
+    "fields": {
+      "owner": 8,
+      "description": "Well maintained.",
+      "location_city": "London",
+      "Address": "56 Terracy Road, T345LT",
+      "number_of_bedrooms": "3"
+    }
+  }
+]

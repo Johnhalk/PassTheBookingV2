@@ -13,7 +13,7 @@ class Property(models.Model):
     owner = models.ForeignKey(Client, on_delete=models.CASCADE)
     description = models.CharField(max_length=200)
     location_city = models.CharField(max_length=100)
-    Address = models.CharField(max_length=150, unique=True)
+    Address = models.CharField(max_length=150)
     number_of_bedrooms = models.IntegerField()
 
     def publish(self):
