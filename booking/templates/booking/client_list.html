@@ -7,7 +7,7 @@
     <div class="w3-panel w3-leftbar w3-light-grey">
       <h4 class="w3-wide" id='name'> Client Name: {{ client.first_name }}</h4>
       <h6 class="card-subtitle mb-2 text-muted">Last name: {{ client.last_name }}</h6>
-      <p class="card-text">Date joined: {{ client.date_joined }}</p>
+      <p>Date joined: {{ client.date_joined }}</p>
       <h6 class='w3-wide' id='more-info'><a href="{% url 'client_detail' pk=client.pk %}">More information</a></h6>
     </div>
   </div>

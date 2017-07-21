@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="{% static 'css/property.css' %}">
+        <link rel="stylesheet" href="{% static 'css/booking.css' %}">
     </head>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -20,17 +20,27 @@
         </ul>
       </div>
     </nav>
+
     <body>
-      <div class="page-header">
-        <h1>Property information</h1>
+      <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+          <span class="w3-text-white">Taking the stress out of internal management</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white" style="font-size:90px">Pass <br> the <br> Booking</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+          <span class="w3-text-white">Getting the job done.</span>
+        </div>
+      </header>
+
+      <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="property-information">
+        <h2 class="w3-wide"><a href="/client">Property information</a></h2>
+        <p class="w3-opacity"><i>Find registered properties below</i><p>
       </div>
-       <div class="content-container">
-           <div class="row">
-               <div class="col-md-8">
-               {% block content %}
-               {% endblock %}
-               </div>
-           </div>
-       </div>
+      <div class="col-md-8">
+        {% block content %}
+        {% endblock %}
+      </div>
     </body>
 </html>
