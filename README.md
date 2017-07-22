@@ -141,4 +141,4 @@ http://127.0.0.1:8000/
 
 This will take you to the homepage of the web app.
 
-![Imgur](http://imgur.com/a/YcAwJ.png)
+![Imgur](http://imgur.com/YcAwJ.png)
