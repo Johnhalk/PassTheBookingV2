@@ -1,3 +1,7 @@
 from django.test import TestCase
 
-# Create your tests here.
+class HomeViewTestCase(TestCase):
+
+    def test_home_list(self):
+        resp=self.client.get('/')
+        self.assertEqual(resp.status_code, 200)

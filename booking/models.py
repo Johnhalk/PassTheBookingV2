@@ -14,10 +14,5 @@ class Client(models.Model):
         help_text=('Designates whether this user should be treated as '
                     'active. Unselect this instead of deleting accounts.'))
 
-
-    def publish(self):
-            self.date_joined = timezone.now()
-            self.save()
-
     def __str__(self):
             return self.first_name

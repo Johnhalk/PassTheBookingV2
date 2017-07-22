@@ -12,9 +12,5 @@ class Booking(models.Model):
     date_check_out = models.DateField(default=datetime.date.today)
     guest_name = models.CharField(max_length=25)
 
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
-
     def __str__(self):
         return str(self.property_booking)
