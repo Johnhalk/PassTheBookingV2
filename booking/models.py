@@ -21,11 +21,3 @@ class Client(models.Model):
 
     def __str__(self):
             return self.first_name
-
-
-"""
-    objects = CustomUserManager()
-
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
-"""

@@ -21,6 +21,7 @@
           <div class="w3-panel w3-leftbar w3-light-grey">
             <h4 class="w3-wide" id='name'> City: {{ properties.location_city }}</h4>
             <h6>Number of bedrooms: {{ properties.number_of_bedrooms }}</h6>
+            <p> Description: {{ properties.description }} </p>
             <p>Address: {{ properties.Address }}</p>
             <p id='more-info'><a href="{% url 'property_detail' pk=properties.pk %}">More information on Property:</a><p>
           </div>
