@@ -18,3 +18,7 @@ class PropertyFormTestCase(TestCase):
         self.assertEqual(propertys.location_city, 'Bristol')
         self.assertEqual(propertys.Address, '123 Test Street')
         self.assertEqual(propertys.number_of_bedrooms, 4)
+
+    def test_blank_data(self):
+        form = PropertyForm({})
+        self.assertFalse(form.is_valid())

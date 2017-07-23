@@ -16,3 +16,7 @@ class ClientFormTestCase(TestCase):
         self.assertEqual(client.email, 'Test@test.com')
         self.assertEqual(client.first_name, 'John')
         self.assertEqual(client.last_name, 'Ashton')
+
+    def test_blank_data(self):
+        form = ClientForm({})
+        self.assertFalse(form.is_valid())

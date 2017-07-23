@@ -19,3 +19,7 @@ class BookingFormTestCase(TestCase):
         self.assertEqual(booking.date_check_in, datetime.date(2017, 8, 15))
         self.assertEqual(booking.date_check_out, datetime.date(2017, 9, 24))
         self.assertEqual(booking.guest_name, 'Richard')
+
+    def test_blank_data(self):
+        form = BookingForm({})
+        self.assertFalse(form.is_valid())
