@@ -1,4 +1,5 @@
 # PassTheBooking
+[Introduction](#introduction) | [Core Features](#core features) | [User Stories](#user stories) | [Technologies](#technologies and dependencies) | [Installation and Usage](#installation and usage) | [Model Architecture](#model architecture) | [Working Overview](#working overview) | [
 
 ## Introduction
 This is a web application built in Python and the Model-View-Controller web framework Django.
@@ -165,6 +166,7 @@ A property model holds information about a properties: Owner, Description of pro
 **Booking Model**
 A Booking model holds information on bookings: Property of which the booking was made on, date of check in, date of check out, guest name.  The booking model holds a one-to-many relation with the Property model, stored within the property_booking variable.  A booking must be connected to a property and can have many bookings.
 
+## Working overview
 
 ## Homepage
 
@@ -220,6 +222,12 @@ Clicking on more information takes the url to 'http://127.0.0.1:8000/booking/pk'
 Clicking on the edit symbol takes the user to the edit page 'http://127.0.0.1:8000/booking/pk/edit'. In the screenshot below the url reads 'http://127.0.0.1:8000/booking/7/edit' because the personal key for the property is 7.
 
 ![Imgur](http://imgur.com/iReekaw.png)
+
+## Admin
+
+Clicking on the Administration button on the nav bar takes the URL to 'http://127.0.0.1:8000/admin/'.  This displays all models and administrative groups for the web app.  You can only access this if you are a django superuser, as explained at the begining.
+
+![Imgur](http://imgur.com/EU6H12a.png)
 
 
 ## The future?
