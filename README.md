@@ -115,14 +115,14 @@ pip install django~=1.10.0
 
 Each model has its own fixture files to populate the database:
 
-- booking/fixtures/initial_data.json
-- property/fixtures/initial_data.json
-- book_property/fixtures/initial_data.json
+- booking/fixtures/initial_data.json - this holds the client model data
+- property/fixtures/initial_data.json - this holds the property model data
+- book_property/fixtures/initial_data.json - this holds the booking model data
 
 To load these files directly into your database type the following into the command-line:
 ```
-python manage.py loaddata property/fixtures/initial_data
 python manage.py loaddata booking/fixtures/initial_data
+python manage.py loaddata property/fixtures/initial_data
 python manage.py loaddata book_property/fixtures/initial_data
 python manage.py makemigrations
 python manage.py migrate
