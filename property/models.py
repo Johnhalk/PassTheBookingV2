@@ -1,11 +1,9 @@
 from django.db import models
-from django.utils import timezone
 from functools import partial
 from django import forms
 from booking.models import Client
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
-DateInput = partial(forms.DateInput, {'class': 'datepicker'})
 
 class Property(models.Model):
     owner = models.ForeignKey(Client, on_delete=models.CASCADE)
