@@ -111,6 +111,14 @@ Install Django with the following in the command line:
 ```
 pip install django~=1.10.0
 ```
+
+**Superuser creation**
+
+We create a super user so we may access the Django built in administration User model. Type this into the command line then follow the prompts.  This will be used to log in to the administration page of the web app.
+```
+python manage.py createsuperuser
+```
+
 **Database**
 
 Each model has its own fixture files to populate the database:
