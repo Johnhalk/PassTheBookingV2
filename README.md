@@ -197,11 +197,31 @@ Clicking on Property on the navbar takes the URL to 'http://127.0.0.1:8000/prope
 
 This displays all relevant property information that is stored in the database - 20 properties populate the database via the fixtures file.
 
-Clicking on more information takes the url to 'http://127.0.0.1:8000/property/pk' where pk is a number that is associated to that client. For the database this ranges from 1 to 20 as there are 20 unique properties.  The page displays detailed information about the property as well as the bookings made on that property. You can also access specific information about each booking by clicking the 'More information' link which takes you to that booking individual page: the url will be of the format 'http://127.0.0.1:8000/booking/pk' and pk being that individual properties personal key.
+Clicking on more information takes the url to 'http://127.0.0.1:8000/property/pk' where pk is a number that is associated to that property. For the database this ranges from 1 to 20 as there are 20 unique properties.  The page displays detailed information about the property as well as the bookings made on that property. You can also access specific information about each booking by clicking the 'More information' link which takes you to that booking individual page: the url will be of the format 'http://127.0.0.1:8000/booking/pk' and pk being that individual properties personal key.
 
 ![Imgur](http://imgur.com/k7Hpmft.png)
 
-Clicking on the edit symbol takes the user to the edit page 'http://127.0.0.1:8000/property/pk/edit'. In the screenshot below the url reads 'http://127.0.0.1:8000/booking/4/edit' because the personal key for the property is 4.
+Clicking on the edit symbol takes the user to the edit page 'http://127.0.0.1:8000/property/pk/edit'. In the screenshot below the url reads 'http://127.0.0.1:8000/property/4/edit' because the personal key for the property is 4.
 
 ![Imgur](http://imgur.com/rTCo0FW.png)
 
+## Booking
+
+Clicking on Booking on the nav bar takes the URL to 'http://127.0.0.1:8000/booking/'.
+
+![Imgur](http://imgur.com/Zqp1rRl.png)
+
+This displays all relevant information that is stored in the database - 32 bookings populate the database via the fixture file.
+
+Clicking on more information takes the url to 'http://127.0.0.1:8000/booking/pk' where pk is a number that is associated to that booking. For the database this ranges from 1 to 32 as there are 32 unique bookings. The page displays detailed information about the booking.
+
+![Imgur](http://imgur.com/NioSS3w.png)
+
+Clicking on the edit symbol takes the user to the edit page 'http://127.0.0.1:8000/booking/pk/edit'. In the screenshot below the url reads 'http://127.0.0.1:8000/booking/7/edit' because the personal key for the property is 7.
+
+![Imgur](http://imgur.com/iReekaw.png)
+
+
+## The future?
+
+- Building on the app in the future I would like to add a services model, storing all information about the cleaning facilities used for each property booking.  A service can have many properties and have many bookings and many clients.
