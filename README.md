@@ -1,10 +1,10 @@
 # PassTheBooking
-[Introduction](#introduction) | [Core Features](#core) | [User Stories](#user) | [Technologies](#technologies) | [Installation and Usage](#installation) | [Model Architecture](#model) | [Working Overview](#working) |
+[Introduction](#introduction) | [Core](#core) | [Technologies](#technologies) | [Installation](#installation) | [Model Architecture](#models) | [Working Overview](#overview) |
 
 ## Introduction
 This is a web application built in Python and the Model-View-Controller web framework Django.
 
-## Core features:
+## Core:
 Built in Django:
 - Core models: Home, Client, Property, Booking and Django User administration.
 - Stores and displays information from a database on to a webapp, dependant on individual models.
@@ -62,7 +62,7 @@ So that I can see who is employee of the month,
 I want to be able to look at the homepage and see who it is.
 
 ```
-## Technologies and Dependencies
+## Technologies
 
 **Core**
 - Python
@@ -74,7 +74,7 @@ I want to be able to look at the homepage and see who it is.
 - unittest
 
 
-## Installation and Usage
+## Installation
 
 Clone this repository and pull the files to a directory of your choosing via the command line.
 
@@ -153,7 +153,7 @@ python manage.py test
 ```
 
 
-## Model architecture:
+## Models:
 
 ![Imgur](http://imgur.com/cGguSOF.png)
 
@@ -166,7 +166,7 @@ A property model holds information about a properties: Owner, Description of pro
 **Booking Model**
 A Booking model holds information on bookings: Property of which the booking was made on, date of check in, date of check out, guest name.  The booking model holds a one-to-many relation with the Property model, stored within the property_booking variable.  A booking must be connected to a property and can have many bookings.
 
-## Working overview
+## Overview
 
 ## Homepage
 
