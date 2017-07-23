@@ -1,5 +1,5 @@
 # PassTheBooking
-[Introduction](#introduction) | [Core Features](#corefeatures) | [User Stories](#userstories) | [Technologies](#technologiesanddependencies) | [Installation and Usage](#installationandusage) | [Model Architecture](#modelarchitecture) | [Working Overview](#workingoverview) |
+[Introduction](#introduction) | [Core Features](#core) | [User Stories](#user) | [Technologies](#technologies) | [Installation and Usage](#installation) | [Model Architecture](#model) | [Working Overview](#working) |
 
 ## Introduction
 This is a web application built in Python and the Model-View-Controller web framework Django.
