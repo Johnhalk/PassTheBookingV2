@@ -164,3 +164,44 @@ A property model holds information about a properties: Owner, Description of pro
 
 **Booking Model**
 A Booking model holds information on bookings: Property of which the booking was made on, date of check in, date of check out, guest name.  The booking model holds a one-to-many relation with the Property model, stored within the property_booking variable.  A booking must be connected to a property and can have many bookings.
+
+
+## Homepage
+
+The homepage displays all information in a navigation bar at the top to access Client, Property and Booking information, as well as django user administration. Be sure to scroll down!
+
+![Imgur](http://imgur.com/Z2c0r8d.png)
+
+## Client
+
+Clicking on Client on the navbar takes the URL to 'http://127.0.0.1:8000/client/'.
+
+![Imgur](http://imgur.com/95PWG2y.png)
+
+This displays all relevant client information that is stored in the database - 13 client information populates the database via the fixture file.
+
+Clicking on more information takes the url to 'http://127.0.0.1:8000/client/pk' where pk is a number that is associated to that client. For the database this ranges from 1 to 13 as there are 13 unique clients.  The page displays detailed information about the client as well as the properties that are registered to them. You can also access specific information about each property by clicking the 'More information on property:' link which takes you to that properties individual page: the url will be of the format http://127.0.0.1:8000/property/pk' and pk being that individual properties personal key.
+
+![Imgur](http://imgur.com/N1Ovrzq.png)
+
+Clicking on the edit symbol takes the user to an edit page: 'http://127.0.0.1:8000/client/pk/edit'.  In the screenshot below the url reads  'http://127.0.0.1:8000/client/1/edit' because the personal key for this client is 1.
+
+![Imgur](http://imgur.com/wrhk0lI.png)
+
+
+## Property
+
+Clicking on Property on the navbar takes the URL to 'http://127.0.0.1:8000/property/'.
+
+![Imgur](http://imgur.com/KIT8nfu.png)
+
+This displays all relevant property information that is stored in the database - 20 properties populate the database via the fixtures file.
+
+Clicking on more information takes the url to 'http://127.0.0.1:8000/property/pk' where pk is a number that is associated to that client. For the database this ranges from 1 to 20 as there are 20 unique properties.  The page displays detailed information about the property as well as the bookings made on that property. You can also access specific information about each booking by clicking the 'More information' link which takes you to that booking individual page: the url will be of the format 'http://127.0.0.1:8000/booking/pk' and pk being that individual properties personal key.
+
+![Imgur](http://imgur.com/k7Hpmft.png)
+
+Clicking on the edit symbol takes the user to the edit page 'http://127.0.0.1:8000/property/pk/edit'. In the screenshot below the url reads 'http://127.0.0.1:8000/booking/4/edit' because the personal key for the property is 4.
+
+![Imgur](http://imgur.com/rTCo0FW.png)
+
