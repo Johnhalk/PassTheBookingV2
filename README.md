@@ -73,6 +73,12 @@ I want to be able to look at the homepage and see who it is.
 
 - unittest
 
+**Deployed on pythonanywhere**
+
+```
+http://johnashtonpython.pythonanywhere.com/
+```
+
 
 ## Installation
 
@@ -101,7 +107,7 @@ $ python --version
 
 Activate the virtual environment with the following in the command-line:
 ```
-myvenv/bin/activate
+source myvenv/bin/activate
 ```
 Update to the latest version of pip:
 ```
