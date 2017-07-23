@@ -141,4 +141,26 @@ http://127.0.0.1:8000/
 
 This will take you to the homepage of the web app.
 
+## Testing
+
+![Imgur](http://imgur.com/rXuWlS9.png)
+
+Tests are ran using Djangos built in unittest framework.  There are 19 tests in total, tests are done on each apps views, models and forms. To run tests type the following into the command line:
+
+```
+python manage.py test
+```
+
+
+## Model architecture:
+
 ![Imgur](http://imgur.com/cGguSOF.png)
+
+**Client Model**
+A client model Holds information about a client: Email, First name, Last name, Date joined, is staff and is active
+
+**Property Model**
+A property model holds information about a properties: Owner, Description of property, City Location, Address and number of bedrooms.  The property model holds a one-to-many relation with the Client model, stored within the Owner variable. A property must be connected to a client and a client can have many properties.
+
+**Booking Model**
+A Booking model holds information on bookings: Property of which the booking was made on, date of check in, date of check out, guest name.  The booking model holds a one-to-many relation with the Property model, stored within the property_booking variable.  A booking must be connected to a property and can have many bookings.
