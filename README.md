@@ -225,3 +225,5 @@ Clicking on the edit symbol takes the user to the edit page 'http://127.0.0.1:80
 ## The future?
 
 - Building on the app in the future I would like to add a services model, storing all information about the cleaning facilities used for each property booking.  A service can have many properties and have many bookings and many clients.
+
+-Re organise folder names, booking folder holding the client model and book_property folder holding the booking model doesn't make logical sense.
