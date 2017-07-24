@@ -9,6 +9,7 @@ Built in Django:
 - Core models: Home, Client, Property, Booking and Django User administration.
 - Stores and displays information from a database on to a webapp, dependant on individual models.
 - SQLite database
+- Styling using CSS & Bootstrap
 
 ## User Stories
 ```
