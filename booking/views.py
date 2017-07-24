@@ -1,28 +1,23 @@
-from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Client
-from .forms import ClientForm
-from property.models import Property
+from .models import Booking
+from .forms import BookingForm
 
-def client_list(request):
-    clients = Client.objects.all()
-    return render(request, 'booking/client_list.html', {'clients': clients})
+def booking_list(request):
+    bookings = Booking.objects.all()
+    return render(request, 'booking/booking_list.html', {'bookings': bookings})
 
-def client_detail(request, pk, **kwargs):
-    clients = get_object_or_404(Client, pk=pk)
-    propertys = Property.objects.filter(owner=pk)
-    return render(request, 'booking/client_detail.html', {'clients': clients, 'propertys': propertys})
+def booking_detail(request, pk):
+    booking = get_object_or_404(Booking, pk=pk)
+    return render(request, 'booking/booking_detail.html', {'booking': booking})
 
-def client_edit(request, pk):
-    client = get_object_or_404(Client, pk=pk)
-    if request.method == 'POST':
-        form = ClientForm(request.POST, instance=client)
+def booking_edit(request, pk):
+    booking = get_object_or_404(Booking, pk=pk)
+    if request.method == "POST":
+        form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
-            client = form.save(commit=False)
-            client.clients = request.user
-            client.date_joined = timezone.now()
-            client.save()
-            return redirect('client_detail', pk=client.pk)
+            booking = form.save(commit=False)
+            booking.save()
+            return redirect('booking_detail', pk=booking.pk)
     else:
-        form = ClientForm()
-        return render(request, 'booking/client_edit.html', {'form': form})
+        form = BookingForm(instance=booking)
+    return render(request, 'booking/booking_edit.html', {'form': form})

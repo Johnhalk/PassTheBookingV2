@@ -1,8 +1,8 @@
 from django import forms
-from .models import Client
+from .models import Booking
 
-class ClientForm(forms.ModelForm):
+class BookingForm(forms.ModelForm):
 
     class Meta:
-        model = Client
-        fields = ('email', 'first_name', 'last_name')
+        model = Booking
+        fields = ('property', 'date_check_in', 'date_check_out', 'guest_name')

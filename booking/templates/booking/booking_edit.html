@@ -1,10 +1,10 @@
-{% extends 'book_property/base.html' %}
+{% extends 'booking/base.html' %}
 {% load staticfiles %}
 
 {% block content %}
   <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="booking-list">
     <div class="w3-panel w3-leftbar w3-light-grey">
-      <h4 id='name'>Edit a bookings details:</h4>
+      <h4 id='name'>Edit a booking's details:</h4>
       <form method="POST" class="book-property-form">{% csrf_token %}
           {{ form.as_p }}
           <button type="submit" class="save btn btn-default">Save</button>

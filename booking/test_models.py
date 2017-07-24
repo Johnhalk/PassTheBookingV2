@@ -1,9 +1,9 @@
 from django.test import TestCase
-from .models import Client
+from .models import Booking
 
-class ClientModelsTestCase(TestCase):
+class BookingModelsTestCase(TestCase):
     fixtures=['initial_data.json']
 
     def test_string_representation(self):
-        client=Client.objects.all()
-        self.assertEqual(str(client[0]), 'John')
+        bookings=Booking.objects.all()
+        self.assertEqual(str(bookings[0]), 'London')

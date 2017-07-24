@@ -1,26 +1,32 @@
 from django.test import TestCase
-from .models import Client
+from .models import Booking
 from property.models import Property
+from booking.models import Client
 
-class ClientViewsTestCase(TestCase):
-    fixtures = ['initial_data.json']
+class BookingViewsTestCase(TestCase):
+    fixtures =['initial_data.json']
 
-    def test_client_list(self):
-        resp = self.client.get('/client/')
+    def test_book_property_list(self):
+        resp=self.client.get('/booking/')
         self.assertEqual(resp.status_code, 200)
-        self.assertTrue('clients' in resp.context)
-        self.assertEqual([client.pk for client in resp.context['clients']], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])
+        self.assertTrue('bookings' in resp.context)
+        booking_list=Booking.objects.all()
+        self.assertEqual(booking_list[0].property.pk, 1)
+        self.assertEqual(booking_list[1].property.pk, 1)
+        self.assertEqual(booking_list[2].property.pk, 4)
+        self.assertEqual(booking_list[3].property.pk, 3)
+        self.assertEqual(booking_list[4].property.pk, 2)
 
-    def test_client_detail(self):
-        resp = self.client.get('/client/1/')
+
+    def test_book_property_detail(self):
+        resp=self.client.get('/booking/1/')
         self.assertEqual(resp.status_code, 200)
-        self.assertTrue('clients' in resp.context)
-        self.assertTrue('propertys' in resp.context)
-        self.assertEqual(resp.context['clients'].pk, 1)
-        properties=Property.objects.all()
-        self.assertEqual(properties[0].owner.pk, 1)
-        self.assertEqual(properties[1].owner.pk, 1)
+        self.assertTrue('bookings' in resp.context)
+        self.assertTrue('which_property' in resp.context)
+        booking_list=Booking.objects.all()
+        self.assertEqual(booking_list[0].property.pk, 1)
+        self.assertEqual(booking_list[1].property.pk, 1)
 
-    def test_client_edit(self):
-        resp = self.client.get('/client/1/edit/')
+    def test_book_property_edit(self):
+        resp = self.client.get('/booking/1/edit/')
         self.assertEqual(resp.status_code, 200)

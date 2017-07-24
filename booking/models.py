@@ -1,18 +1,20 @@
+from django import forms
 from django.db import models
-from django.utils import timezone
 
+import datetime
+import os
+import sys
+from functools import partial
 
-class Client(models.Model):
-    email = models.EmailField(('email address'), max_length=254, unique=True)
-    first_name = models.CharField(('first name'), max_length=30, blank=True)
-    last_name = models.CharField(('last name'), max_length=30, blank=True)
-    date_joined = models.DateTimeField(('date joined'), default=timezone.now)
-    is_staff = models.BooleanField(('staff status'), default=False,
-        help_text=('Designates whether the user can log into this admin '
-                    'site.'))
-    is_active = models.BooleanField(('active'), default=True,
-        help_text=('Designates whether this user should be treated as '
-                    'active. Unselect this instead of deleting accounts.'))
+from property.models import Property
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+
+class Booking(models.Model):
+    property = models.ForeignKey(Property, on_delete=models.CASCADE)
+    date_check_in = models.DateField(default=datetime.date.today)
+    date_check_out = models.DateField(default=datetime.date.today)
+    guest_name = models.CharField(max_length=25)
 
     def __str__(self):
-            return self.first_name
+        return self.guest_name + ' - ' + str(self.property)

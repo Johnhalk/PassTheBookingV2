@@ -1,0 +1,119 @@
+[
+  {
+    "model": "client.client",
+    "pk": 1,
+    "fields": {
+      "email": "John_lenon@hotmail.com",
+      "first_name": "John",
+      "last_name": "Lennon"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 2,
+    "fields": {
+      "email": "Paul@hotmail.com",
+      "first_name": "Paul",
+      "last_name": "McCartney"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 3,
+    "fields": {
+      "email": "George@hotmail.com",
+      "first_name": "George",
+      "last_name": "Harrison"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 4,
+    "fields": {
+      "email": "Ringo@hotmail.com",
+      "first_name": "Ringo",
+      "last_name": "Starr"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 5,
+    "fields": {
+      "email": "Sandradee@hotmail.com",
+      "first_name": "Sandra",
+      "last_name": "Dee"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 6,
+    "fields": {
+      "email": "Bettywho@hotmail.com",
+      "first_name": "Betty",
+      "last_name": "Who"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 7,
+    "fields": {
+      "email": "EammonA@hotmail.com",
+      "first_name": "Eammon",
+      "last_name": "Atkinson"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 8,
+    "fields": {
+      "email": "Richard@hotmail.com",
+      "first_name": "Richard",
+      "last_name": "McRich"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 9,
+    "fields": {
+      "email": "HowardS@hotmail.com",
+      "first_name": "Howard",
+      "last_name": "Steal"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 10,
+    "fields": {
+      "email": "MorganT@hotmail.com",
+      "first_name": "Morgan",
+      "last_name": "Trum"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 11,
+    "fields": {
+      "email": "Yggrite@hotmail.com",
+      "first_name": "Ygritte",
+      "last_name": "Snow"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 12,
+    "fields": {
+      "email": "Arya@hotmail.com",
+      "first_name": "Arya",
+      "last_name": "Stark"
+    }
+  },
+  {
+    "model": "client.client",
+    "pk": 13,
+    "fields": {
+      "email": "Cersei@hotmail.com",
+      "first_name": "Cersei",
+      "last_name": "Lannister"
+    }
+  }
+]

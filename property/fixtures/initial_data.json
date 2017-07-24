@@ -6,7 +6,7 @@
       "owner": 1,
       "description": "Beautiful 2 bedroom appartment.",
       "location_city": "London",
-      "Address": "123 Fake Street, SW234GD",
+      "address": "123 Fake Street, SW234GD",
       "number_of_bedrooms": "2"
     }
   },
@@ -17,7 +17,7 @@
       "owner": 1,
       "description": "Nothing is real...",
       "location_city": "London",
-      "Address": "Strawberry Fields",
+      "address": "Strawberry Fields",
       "number_of_bedrooms": "4"
     }
   },
@@ -28,7 +28,7 @@
       "owner": 2,
       "description": "Holiday home haven",
       "location_city": "Liverpool",
-      "Address": "123 Mort Street, L34ND",
+      "address": "123 Mort Street, L34ND",
       "number_of_bedrooms": "5"
     }
   },
@@ -39,7 +39,7 @@
       "owner": 3,
       "description": "OK home in heart of city center",
       "location_city": "Birmingham",
-      "Address": "154 city walk, BR45MN",
+      "address": "154 city walk, BR45MN",
       "number_of_bedrooms": "1"
     }
   },
@@ -50,7 +50,7 @@
       "owner": 4,
       "description": "Django Villa for all cool coders",
       "location_city": "London",
-      "Address": "13 Django road",
+      "address": "13 Django road",
       "number_of_bedrooms": "5"
     }
   },
@@ -61,7 +61,7 @@
       "owner": 4,
       "description": "Well presented appartment",
       "location_city": "London",
-      "Address": "46 Fake Street, SW34GD",
+      "address": "46 Fake Street, SW34GD",
       "number_of_bedrooms": "1"
     }
   },
@@ -72,7 +72,7 @@
       "owner": 5,
       "description": "Good natured home",
       "location_city": "Bristol",
-      "Address": "12 Tree land, TR33LND",
+      "address": "12 Tree land, TR33LND",
       "number_of_bedrooms": "3"
     }
   },
@@ -83,7 +83,7 @@
       "owner": 6,
       "description": "Well presented cave.",
       "location_city": "London",
-      "Address": "42 cave under bridge, C14VE",
+      "address": "42 cave under bridge, C14VE",
       "number_of_bedrooms": "1"
     }
   },
@@ -94,7 +94,7 @@
       "owner": 7,
       "description": "Well mannered home",
       "location_city": "Glasgow",
-      "Address": "Haggis road, H4GG1S",
+      "address": "Haggis road, H4GG1S",
       "number_of_bedrooms": "5"
     }
   },
@@ -105,7 +105,7 @@
       "owner": 8,
       "description": "Beautiful 2 bedroom appartment.",
       "location_city": "London",
-      "Address": "123 Fake Street, SW234GD",
+      "address": "123 Fake Street, SW234GD",
       "number_of_bedrooms": "2"
     }
   },
@@ -116,7 +116,7 @@
       "owner": 9,
       "description": "Tatooine haven.",
       "location_city": "Mos Eisley",
-      "Address": "Hutt Raider Lane",
+      "address": "Hutt Raider Lane",
       "number_of_bedrooms": "4"
     }
   },
@@ -127,7 +127,7 @@
       "owner": 10,
       "description": "Well maintained english getaway",
       "location_city": "Brighton",
-      "Address": "144 swanborough lane, BN45NM",
+      "address": "144 swanborough lane, BN45NM",
       "number_of_bedrooms": "6"
     }
   },
@@ -138,7 +138,7 @@
       "owner": 11,
       "description": "Airy appartment with roof terrace.",
       "location_city": "London",
-      "Address": "1 Baker Street, BA45ER",
+      "address": "1 Baker Street, BA45ER",
       "number_of_bedrooms": "2"
     }
   },
@@ -149,7 +149,7 @@
       "owner": 12,
       "description": "Castle getaway, quite cold.",
       "location_city": "Winterfell",
-      "Address": "Winter is comming lane",
+      "address": "Winter is comming lane",
       "number_of_bedrooms": "20"
     }
   },
@@ -160,7 +160,7 @@
       "owner": 13,
       "description": "Previously a High Sept, some assembly now required..",
       "location_city": "Kings landing",
-      "Address": "12 Kings landing lane",
+      "address": "12 Kings landing lane",
       "number_of_bedrooms": "0"
     }
   },
@@ -171,7 +171,7 @@
       "owner": 9,
       "description": "Wordly view with hot tub.",
       "location_city": "London",
-      "Address": "56 Bort Road, BG45TH",
+      "address": "56 Bort Road, BG45TH",
       "number_of_bedrooms": "4"
     }
   },
@@ -182,7 +182,7 @@
       "owner": 10,
       "description": "Well looking home",
       "location_city": "London",
-      "Address": "56 Yeardly Avenue",
+      "address": "56 Yeardly Avenue",
       "number_of_bedrooms": "2"
     }
   },
@@ -193,7 +193,7 @@
       "owner": 7,
       "description": "Interesting avenue",
       "location_city": "Bolton",
-      "Address": "5 Old Hall Clough, BL64LB",
+      "address": "5 Old Hall Clough, BL64LB",
       "number_of_bedrooms": "5"
     }
   },
@@ -204,7 +204,7 @@
       "owner": 4,
       "description": "Beachy haven.",
       "location_city": "Blackpool",
-      "Address": "45 beahcy haven, B54LP",
+      "address": "45 beahcy haven, B54LP",
       "number_of_bedrooms": "6"
     }
   },
@@ -215,7 +215,7 @@
       "owner": 8,
       "description": "Well maintained.",
       "location_city": "London",
-      "Address": "56 Terracy Road, T345LT",
+      "address": "56 Terracy Road, T345LT",
       "number_of_bedrooms": "3"
     }
   }

@@ -1,119 +1,322 @@
 [
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 1,
     "fields": {
-      "email": "John_lenon@hotmail.com",
-      "first_name": "John",
-      "last_name": "Lennon"
+      "property": 1,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Bort"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 2,
     "fields": {
-      "email": "Paul@hotmail.com",
-      "first_name": "Paul",
-      "last_name": "McCartney"
+      "property": 1,
+      "date_check_in": "2016-12-21",
+      "date_check_out": "2017-01-03",
+      "guest_name": "Bort"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 3,
     "fields": {
-      "email": "George@hotmail.com",
-      "first_name": "George",
-      "last_name": "Harrison"
+      "property": 4,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Trisha"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 4,
     "fields": {
-      "email": "Ringo@hotmail.com",
-      "first_name": "Ringo",
-      "last_name": "Starr"
+      "property": 3,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Katie"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 5,
     "fields": {
-      "email": "Sandradee@hotmail.com",
-      "first_name": "Sandra",
-      "last_name": "Dee"
+      "property": 2,
+      "date_check_in": "2017-08-30",
+      "date_check_out": "2017-09-04",
+      "guest_name": "Gertrude"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 6,
     "fields": {
-      "email": "Bettywho@hotmail.com",
-      "first_name": "Betty",
-      "last_name": "Who"
+      "property": 1,
+      "date_check_in": "2017-04-01",
+      "date_check_out": "2017-04-30",
+      "guest_name": "Optimus Prime"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 7,
     "fields": {
-      "email": "EammonA@hotmail.com",
-      "first_name": "Eammon",
-      "last_name": "Atkinson"
+      "property": 5,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Berret"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 8,
     "fields": {
-      "email": "Richard@hotmail.com",
-      "first_name": "Richard",
-      "last_name": "McRich"
+      "property": 6,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Britney"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 9,
     "fields": {
-      "email": "HowardS@hotmail.com",
-      "first_name": "Howard",
-      "last_name": "Steal"
+      "property": 6,
+      "date_check_in": "2017-05-21",
+      "date_check_out": "2017-06-30",
+      "guest_name": "Gunther"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 10,
     "fields": {
-      "email": "MorganT@hotmail.com",
-      "first_name": "Morgan",
-      "last_name": "Trum"
+      "property": 7,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Ferdinand"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 11,
     "fields": {
-      "email": "Yggrite@hotmail.com",
-      "first_name": "Ygritte",
-      "last_name": "Snow"
+      "property": 7,
+      "date_check_in": "2017-07-03",
+      "date_check_out": "2017-07-25",
+      "guest_name": "Trisha"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 12,
     "fields": {
-      "email": "Arya@hotmail.com",
-      "first_name": "Arya",
-      "last_name": "Stark"
+      "property": 8,
+      "date_check_in": "2015-01-01",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Borris"
     }
   },
   {
-    "model": "booking.client",
+    "model": "booking.booking",
     "pk": 13,
     "fields": {
-      "email": "Cersei@hotmail.com",
-      "first_name": "Cersei",
-      "last_name": "Lannister"
+      "property": 9,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Eammon"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 14,
+    "fields": {
+      "property": 10,
+      "date_check_in": "2017-02-04",
+      "date_check_out": "2017-07-21",
+      "guest_name": "Theo"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 15,
+    "fields": {
+      "property": 11,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Trisha"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 16,
+    "fields": {
+      "property": 12,
+      "date_check_in": "2017-07-15",
+      "date_check_out": "2017-10-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 17,
+    "fields": {
+      "property": 13,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Roger"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 18,
+    "fields": {
+      "property": 14,
+      "date_check_in": "2017-11-21",
+      "date_check_out": "2019-07-30",
+      "guest_name": "Theresa"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 19,
+    "fields": {
+      "property": 15,
+      "date_check_in": "2017-07-20",
+      "date_check_out": "2017-08-15",
+      "guest_name": "Frans"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 20,
+    "fields": {
+      "property": 16,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Juniper"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 21,
+    "fields": {
+      "property": 17,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Jane"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 22,
+    "fields": {
+      "property": 18,
+      "date_check_in": "2014-04-24",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Sophie"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 23,
+    "fields": {
+      "property": 19,
+      "date_check_in": "2020-01-01",
+      "date_check_out": "2027-07-30",
+      "guest_name": "Obama"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 24,
+    "fields": {
+      "property": 20,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Phil"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 25,
+    "fields": {
+      "property": 2,
+      "date_check_in": "2017-06-21",
+      "date_check_out": "2017-07-03",
+      "guest_name": "Terrance"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 26,
+    "fields": {
+      "property": 6,
+      "date_check_in": "2018-07-21",
+      "date_check_out": "2018-07-30",
+      "guest_name": "Bernie"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 27,
+    "fields": {
+      "property": 8,
+      "date_check_in": "2018-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 28,
+    "fields": {
+      "property": 10,
+      "date_check_in": "2017-11-01",
+      "date_check_out": "2017-11-21",
+      "guest_name": "Terrence"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 29,
+    "fields": {
+      "property": 12,
+      "date_check_in": "2017-11-03",
+      "date_check_out": "2018-07-30",
+      "guest_name": "Ygritte"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 30,
+    "fields": {
+      "property": 14,
+      "date_check_in": "2017-07-21",
+      "date_check_out": "2017-07-30",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 31,
+    "fields": {
+      "property": 16,
+      "date_check_in": "2017-08-13",
+      "date_check_out": "2018-02-02",
+      "guest_name": "Bort"
+    }
+  },
+  {
+    "model": "booking.booking",
+    "pk": 32,
+    "fields": {
+      "property": 18,
+      "date_check_in": "2017-04-20",
+      "date_check_out": "2017-04-25",
+      "guest_name": "Winfred"
     }
   }
 ]

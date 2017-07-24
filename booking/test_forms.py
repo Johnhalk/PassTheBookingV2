@@ -1,22 +1,28 @@
 from django.test import TestCase
-from .models import Client
-from .forms import ClientForm
 
-class ClientFormTestCase(TestCase):
+from .forms import BookingForm
+from .models import Booking
+
+import datetime
+
+
+class BookingFormTestCase(TestCase):
     fixtures=['initial_data.json']
 
     def test_valid_data(self):
-        form=ClientForm({
-            'email': 'Test@test.com',
-            'first_name': 'John',
-            'last_name': 'Ashton',
+        form=BookingForm({
+            'property': 2,
+            'date_check_in': '2017-08-15',
+            'date_check_out': '2017-09-24',
+            'guest_name': 'Richard',
         })
         self.assertTrue(form.is_valid())
-        client=form.save()
-        self.assertEqual(client.email, 'Test@test.com')
-        self.assertEqual(client.first_name, 'John')
-        self.assertEqual(client.last_name, 'Ashton')
+        booking=form.save()
+        self.assertEqual(booking.property.pk, 2)
+        self.assertEqual(booking.date_check_in, datetime.date(2017, 8, 15))
+        self.assertEqual(booking.date_check_out, datetime.date(2017, 9, 24))
+        self.assertEqual(booking.guest_name, 'Richard')
 
     def test_blank_data(self):
-        form = ClientForm({})
+        form = BookingForm({})
         self.assertFalse(form.is_valid())
