@@ -7,12 +7,6 @@ body {
     padding-left: 15px;
 }
 
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("http://www.rioloft.com/wp-content/uploads/2016/02/rio-apartment-4225-2-1.jpg");
-    min-height: 75%;
-}
 
 #name{
   color: orange;
