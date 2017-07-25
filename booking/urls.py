@@ -4,5 +4,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.booking_list, name='booking_list'),
     url(r'^(?P<pk>\d+)/$', views.booking_detail, name='booking_detail'),
+    url(r'^new/$', views.booking_new, name='booking_new'),
     url(r'^(?P<pk>\d+)/edit/$', views.booking_edit, name='booking_edit'),
 ]

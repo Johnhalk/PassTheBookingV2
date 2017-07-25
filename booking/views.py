@@ -10,6 +10,17 @@ def booking_detail(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
     return render(request, 'booking/booking_detail.html', {'booking': booking})
 
+def booking_new(request):
+    if request.method == 'POST':
+        form=BookingForm(request.POST)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.save()
+            return redirect('booking_detail', pk=booking.pk)
+    else:
+        form=BookingForm()
+        return render(request, 'booking/booking_edit.html', {'form': form})
+
 def booking_edit(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
     if request.method == "POST":
