@@ -3,117 +3,117 @@
     "model": "client.client",
     "pk": 1,
     "fields": {
-      "email": "John_lenon@hotmail.com",
       "first_name": "John",
-      "last_name": "Lennon"
+      "last_name": "Lennon",
+      "email": "John_lenon@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 2,
     "fields": {
-      "email": "Paul@hotmail.com",
       "first_name": "Paul",
-      "last_name": "McCartney"
+      "last_name": "McCartney",
+      "email": "Paul@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 3,
     "fields": {
-      "email": "George@hotmail.com",
       "first_name": "George",
-      "last_name": "Harrison"
+      "last_name": "Harrison",
+      "email": "George@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 4,
     "fields": {
-      "email": "Ringo@hotmail.com",
       "first_name": "Ringo",
-      "last_name": "Starr"
+      "last_name": "Starr",
+      "email": "Ringo@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 5,
     "fields": {
-      "email": "Sandradee@hotmail.com",
       "first_name": "Sandra",
-      "last_name": "Dee"
+      "last_name": "Dee",
+      "email": "Sandradee@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 6,
     "fields": {
-      "email": "Bettywho@hotmail.com",
       "first_name": "Betty",
-      "last_name": "Who"
+      "last_name": "Who",
+      "email": "Bettywho@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 7,
     "fields": {
-      "email": "EammonA@hotmail.com",
       "first_name": "Eammon",
-      "last_name": "Atkinson"
+      "last_name": "Atkinson",
+      "email": "EammonA@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 8,
     "fields": {
-      "email": "Richard@hotmail.com",
       "first_name": "Richard",
-      "last_name": "McRich"
+      "last_name": "McRich",
+      "email": "Richard@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 9,
     "fields": {
-      "email": "HowardS@hotmail.com",
       "first_name": "Howard",
-      "last_name": "Steal"
+      "last_name": "Steal",
+      "email": "HowardS@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 10,
     "fields": {
-      "email": "MorganT@hotmail.com",
       "first_name": "Morgan",
-      "last_name": "Trum"
+      "last_name": "Trum",
+      "email": "MorganT@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 11,
     "fields": {
-      "email": "Yggrite@hotmail.com",
       "first_name": "Ygritte",
-      "last_name": "Snow"
+      "last_name": "Snow",
+      "email": "Yggrite@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 12,
     "fields": {
-      "email": "Arya@hotmail.com",
       "first_name": "Arya",
-      "last_name": "Stark"
+      "last_name": "Stark",
+      "email": "Arya@hotmail.com"
     }
   },
   {
     "model": "client.client",
     "pk": 13,
     "fields": {
-      "email": "Cersei@hotmail.com",
       "first_name": "Cersei",
-      "last_name": "Lannister"
+      "last_name": "Lannister",
+      "email": "Cersei@hotmail.com"
     }
   }
 ]

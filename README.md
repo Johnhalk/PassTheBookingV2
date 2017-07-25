@@ -119,6 +119,15 @@ Install Django with the following in the command line:
 pip install django~=1.10.0
 ```
 
+**Create databases**
+
+First run:
+```
+python manage.py migrate
+```
+
+This creates the databases for the project.
+
 **Superuser creation**
 
 We create a super user so we may access the Django built in administration User model. Type this into the command line then follow the prompts.  This will be used to log in to the administration page of the web app.
@@ -126,19 +135,19 @@ We create a super user so we may access the Django built in administration User 
 python manage.py createsuperuser
 ```
 
-**Database**
+**Load data into database**
 
 Each model has its own fixture files to populate the database:
 
-- booking/fixtures/initial_data.json - this holds the client model data
+- client/fixtures/initial_data.json - this holds the client model data
 - property/fixtures/initial_data.json - this holds the property model data
-- book_property/fixtures/initial_data.json - this holds the booking model data
+- booking/fixtures/initial_data.json - this holds the booking model data
 
 To load these files directly into your database type the following into the command-line:
 ```
-python manage.py loaddata booking/fixtures/initial_data
+python manage.py loaddata client/fixtures/initial_data
 python manage.py loaddata property/fixtures/initial_data
-python manage.py loaddata book_property/fixtures/initial_data
+python manage.py loaddata booking/fixtures/initial_data
 python manage.py makemigrations
 python manage.py migrate
 ```

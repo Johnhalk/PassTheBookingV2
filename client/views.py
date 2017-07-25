@@ -16,7 +16,6 @@ def client_detail(request, pk, **kwargs):
 
 def client_edit(request, pk):
     client = get_object_or_404(Client, pk=pk)
-    print client
     if request.method == 'POST':
         form = ClientForm(request.POST, instance=client)
         if form.is_valid():
