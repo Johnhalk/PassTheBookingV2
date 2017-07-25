@@ -28,3 +28,7 @@ class PropertyViewsTestCase(TestCase):
     def test_property_edit(self):
         resp=self.client.get('/property/1/edit/')
         self.assertEqual(resp.status_code, 200)
+
+    def test_property_new(self):
+        resp = self.client.get('/property/new/')
+        self.assertEqual(resp.status_code, 200)

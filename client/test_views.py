@@ -24,3 +24,7 @@ class ClientViewsTestCase(TestCase):
     def test_client_edit(self):
         resp = self.client.get('/client/1/edit/')
         self.assertEqual(resp.status_code, 200)
+
+    def test_client_new(self):
+        resp = self.client.get('/client/new/')
+        self.assertEqual(resp.status_code, 200)
