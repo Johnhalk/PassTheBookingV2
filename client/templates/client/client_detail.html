@@ -25,34 +25,34 @@
     <h2 class="w3-wide">Properties linked to the client:</a></h2>
     <p class="w3-opacity"><i>Find clients properties below:</i><p>
   </div>
-      {% for property in properties %}
-        <div class="w3-container">
-            <h5>Property No. {{property.pk}}</h5>
-            <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-              <tr>
-                <td>Owner:</td>
-                <td>{{ property.owner }}</td>
-              </tr>
-              <tr>
-                <td>Description:</td>
-                <td>{{ property.description }}</td>
-              </tr>
-              <tr>
-                <td>City Location:</td>
-                <td>{{ property.location_city }}</td>
-              </tr>
-              <tr>
-                <td>Address:</td>
-                <td>{{ property.address }}</td>
-              </tr>
-              <tr>
-                <td>No. bedrooms:</td>
-                <td>{{ property.number_of_bedrooms }}</td>
-              </tr>
-            </table><br>
-            <button class="w3-button w3-dark-grey" id='more-info'><a href="/client">Return</a><i class="fa fa-arrow-right"></i></button>
-            <button class="w3-button w3-dark-grey" id='more-info'><a href="{% url 'property_detail' pk=property.pk %}">More information on property</a><i class="fa fa-arrow-right"></i></button>
-        </div>
-        <br>
-      {% endfor %}
+  {% for property in properties %}
+    <div class="w3-container">
+      <h5>Property No. {{property.pk}}</h5>
+      <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+        <tr>
+          <td>Owner:</td>
+          <td>{{ property.owner }}</td>
+        </tr>
+        <tr>
+          <td>Description:</td>
+          <td>{{ property.description }}</td>
+        </tr>
+        <tr>
+          <td>City Location:</td>
+          <td>{{ property.location_city }}</td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td>{{ property.address }}</td>
+        </tr>
+        <tr>
+          <td>No. bedrooms:</td>
+          <td>{{ property.number_of_bedrooms }}</td>
+        </tr>
+      </table><br>
+      <button class="w3-button w3-dark-grey" id='more-info'><a href="/client">Return</a><i class="fa fa-arrow-right"></i></button>
+      <button class="w3-button w3-dark-grey" id='more-info'><a href="{% url 'property_detail' pk=property.pk %}">More information on property</a><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <br>
+  {% endfor %}
 {% endblock %}
