@@ -14,6 +14,17 @@ def property_detail(request, pk):
     bookings = Booking.objects.filter(property=property)
     return render(request, 'property/property_detail.html', {'property': property, 'bookings': bookings})
 
+def property_new(request):
+    if request.method =='POST':
+        form=PropertyForm(request.POST)
+        if form.is_valid():
+            property=form.save(commit=False)
+            property.save()
+            return redirect('property_detail', pk=property.pk)
+    else:
+        form = PropertyForm()
+        return render(request, 'property/property_edit.html', {'form': form})
+
 def property_edit(request, pk):
     property = get_object_or_404(Property, pk=pk)
     if request.method == "POST":
