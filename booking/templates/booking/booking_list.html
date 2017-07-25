@@ -3,14 +3,28 @@
 
 {% block content %}
   {% for booking in bookings %}
-    <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="client-list">
-      <div class="w3-panel w3-leftbar w3-light-grey">
-        <h4 class='w3-wide' id='name'>Property: {{ booking.property }}</h4>
-        <p>Check in date: {{ booking.date_check_in}}</p>
-        <p>Check out date: {{ booking.date_check_out}}</p>
-        <p>Guest name: {{ booking.guest_name}}</p>
-        <h6 class='w3-wide' id='more-info'>  <a href="{% url 'booking_detail' pk=booking.pk %}">More information</a></h6>
-      </div>
-    </div>
+<div class="w3-container">
+  <h5>Booking No. {{booking.pk}}</h5>
+  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+    <tr>
+      <td>Property:</td>
+      <td>{{ booking.property }}</td>
+    </tr>
+    <tr>
+      <td>Check in date:</td>
+      <td>{{booking.date_check_in}}</td>
+    </tr>
+    <tr>
+      <td>Check out date:</td>
+      <td>{{booking.date_check_out}}</td>
+    </tr>
+    <tr>
+      <td>Guest name:</td>
+      <td>{{ booking.guest_name}}</td>
+    </tr>
+  </table><br>
+  <button class="w3-button w3-dark-grey" id='more-info'><a href="{% url 'booking_detail' pk=booking.pk %}">More Information</a><i class="fa fa-arrow-right"></i></button>
+</div>
+<br>
   {% endfor %}
 {% endblock %}
