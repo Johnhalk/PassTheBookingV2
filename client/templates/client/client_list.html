@@ -8,15 +8,15 @@
       <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
         <tr>
           <td>Name:</td>
-          <td>{{ client }}</td>
+          <td class = 'w3-right'>{{ client }}</td>
         </tr>
         <tr>
           <td>Date Joined:</td>
-          <td>{{ client.date_joined }}</td>
+          <td class = 'w3-right'>{{ client.date_joined }}</td>
         </tr>
         <tr>
           <td>Email:</td>
-          <td>{{ client.email }}</td>
+          <td class = 'w3-right'>{{ client.email }}</td>
         </tr>
       </table><br>
       <button class="w3-button w3-dark-grey" id='more-info'><a href="{% url 'client_detail' pk=client.pk %}">More information</a><i class="fa fa-arrow-right"></i></button>
