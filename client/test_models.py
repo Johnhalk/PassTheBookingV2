@@ -6,4 +6,4 @@ class ClientModelsTestCase(TestCase):
 
     def test_string_representation(self):
         client=Client.objects.all()
-        self.assertEqual(str(client[0]), 'John')
+        self.assertEqual(str(client[0]), 'John Lennon')

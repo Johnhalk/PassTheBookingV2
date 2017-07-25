@@ -1,7 +1,7 @@
 from django.test import TestCase
 from .models import Booking
 from property.models import Property
-from booking.models import Client
+from client.models import Client
 
 class BookingViewsTestCase(TestCase):
     fixtures =['initial_data.json']
@@ -21,8 +21,7 @@ class BookingViewsTestCase(TestCase):
     def test_book_property_detail(self):
         resp=self.client.get('/booking/1/')
         self.assertEqual(resp.status_code, 200)
-        self.assertTrue('bookings' in resp.context)
-        self.assertTrue('which_property' in resp.context)
+        self.assertTrue('booking' in resp.context)
         booking_list=Booking.objects.all()
         self.assertEqual(booking_list[0].property.pk, 1)
         self.assertEqual(booking_list[1].property.pk, 1)

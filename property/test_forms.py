@@ -8,16 +8,18 @@ class PropertyFormTestCase(TestCase):
     def test_valid_data(self):
         form=PropertyForm({
             'owner': 2,
+            'description': 'Nice place.',
             'location_city': 'Bristol',
-            'Address': '123 Test Street',
+            'address': '123 Test Street',
             'number_of_bedrooms': '4',
         })
         self.assertTrue(form.is_valid())
-        propertys=form.save()
-        self.assertEqual(propertys.owner.pk, 2)
-        self.assertEqual(propertys.location_city, 'Bristol')
-        self.assertEqual(propertys.Address, '123 Test Street')
-        self.assertEqual(propertys.number_of_bedrooms, 4)
+        properties=form.save()
+        self.assertEqual(properties.owner.pk, 2)
+        self.assertEqual(properties.description, 'Nice place.')
+        self.assertEqual(properties.location_city, 'Bristol')
+        self.assertEqual(properties.address, '123 Test Street')
+        self.assertEqual(properties.number_of_bedrooms, 4)
 
     def test_blank_data(self):
         form = PropertyForm({})

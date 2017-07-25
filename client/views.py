@@ -14,6 +14,19 @@ def client_detail(request, pk, **kwargs):
     properties = Property.objects.filter(owner=client)
     return render(request, 'client/client_detail.html', {'client': client, 'properties': properties})
 
+def client_new(request):
+    if request.method == 'POST':
+        form = ClientForm(request.POST)
+        if form.is_valid():
+            client = form.save(commit=False)
+            client.clients = request.user
+            client.date_joined = timezone.now()
+            client.save()
+            return redirect('client_detail', pk=client.pk)
+    else:
+        form = ClientForm()
+        return render(request, 'client/client_edit.html', {'form': form})
+
 def client_edit(request, pk):
     client = get_object_or_404(Client, pk=pk)
     if request.method == 'POST':

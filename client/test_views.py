@@ -14,9 +14,9 @@ class ClientViewsTestCase(TestCase):
     def test_client_detail(self):
         resp = self.client.get('/client/1/')
         self.assertEqual(resp.status_code, 200)
-        self.assertTrue('clients' in resp.context)
-        self.assertTrue('propertys' in resp.context)
-        self.assertEqual(resp.context['clients'].pk, 1)
+        self.assertTrue('client' in resp.context)
+        self.assertTrue('properties' in resp.context)
+        self.assertEqual(resp.context['client'].pk, 1)
         properties=Property.objects.all()
         self.assertEqual(properties[0].owner.pk, 1)
         self.assertEqual(properties[1].owner.pk, 1)

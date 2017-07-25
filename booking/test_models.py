@@ -6,4 +6,4 @@ class BookingModelsTestCase(TestCase):
 
     def test_string_representation(self):
         bookings=Booking.objects.all()
-        self.assertEqual(str(bookings[0]), 'London')
+        self.assertEqual(str(bookings[0]), 'Bort - John Lennon, London')

@@ -5,5 +5,5 @@ class PropertyModelsTestCase(TestCase):
     fixtures=['initial_data.json']
 
     def test_string_representation(self):
-        propertys=Property.objects.all()
-        self.assertEqual(str(propertys[0]), 'London')
+        propertyies=Property.objects.all()
+        self.assertEqual(str(propertyies[0]), 'John Lennon, London')
