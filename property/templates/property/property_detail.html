@@ -2,29 +2,62 @@
 {% load staticfiles %}
 
 {% block content %}
-  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="property-list">
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <a class="btn btn-default" href="{% url 'property_edit' pk=property.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-      <h4 class="w3-wide" id='name'>Owner: {{ property.owner }}</h4>
-      <p> Description: {{ property.description }} </p>
-      <p>City Location: {{ property.location_city }}</p>
-      <p>address: {{ property.address }}</p>
-      <p>No. bedrooms: {{ property.number_of_bedrooms }}</p>
-      <h6 class='w3-wide' id='more-info'><a href="/property">Return</a></h6>
-    </div>
-  </div>
-  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="property-information">
-    <h2 class="w3-wide">Booking history for property:</a></h2>
-  </div>
-      {% for booking in bookings %}
-        <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="client-list">
-          <div class="w3-panel w3-leftbar w3-light-grey">
-            <h4 class='w3-wide' id='name'> Property: {{ booking.property_booking }}</h4>
-            <p> Guest name: {{ booking.guest_name }}<p>
-            <p> Check in: {{ booking.date_check_in }}<p>
-            <p> Check out: {{ booking.date_check_out}}<p>
-            <p id='more-info'><a href="{% url 'booking_detail' pk=booking.pk %}">More infromation on Booking</a><p>
-          </div>
+        <div class="w3-container">
+            <h5>Property No. {{property.pk}}</h5>
+            <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+              <tr>
+                <td>Owner:</td>
+                <td>{{ property.owner }}</td>
+              </tr>
+              <tr>
+                <td>Description:</td>
+                <td>{{ property.description }}</td>
+              </tr>
+              <tr>
+                <td>City Location:</td>
+                <td>{{ property.location_city }}</td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td>{{ property.address }}</td>
+              </tr>
+              <tr>
+                <td>No. bedrooms:</td>
+                <td>{{ property.number_of_bedrooms }}</td>
+              </tr>
+            </table><br>
+            <button class="w3-button w3-dark-grey" id='more-info'><a href="/property">Return</a><i class="fa fa-arrow-right"></i></button>
+            <button class="w3-button w3-dark-grey" id='more-info'><a href="{% url 'property_edit' pk=property.pk %}">Edit property</a><i class="fa fa-arrow-right"></i></button>
+
         </div>
+        <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="booking-information">
+          <h2 class="w3-wide">Booking information</h2>
+          <p class="w3-opacity"><i>Find booking histories below:</i><p>
+        </div>
+        {% for booking in bookings %}
+        <div class="w3-container">
+            <h5>Booking No. {{booking.pk}}</h5>
+            <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+              <tr>
+                <td>Property:</td>
+                <td>{{ booking.property }}</td>
+              </tr>
+              <tr>
+                <td>Guest name:</td>
+                <td>{{ booking.guest_name }}</td>
+              </tr>
+              <tr>
+                <td>Check in:</td>
+                <td>{{ booking.date_check_in }}</td>
+              </tr>
+              <tr>
+                <td>Check out:</td>
+                <td>{{ booking.date_check_out }}</td>
+              </tr>
+            </table><br>
+            <button class="w3-button w3-dark-grey" id='more-info'><a href="/property">Return</a><i class="fa fa-arrow-right"></i></button>
+            <button class="w3-button w3-dark-grey" id='more-info'><a href="{% url 'booking_detail' pk=booking.pk %}">More infromation on Booking</a><i class="fa fa-arrow-right"></i></button>
+        </div>
+        <br>
         {%endfor%}
 {%endblock%}
