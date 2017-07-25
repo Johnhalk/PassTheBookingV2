@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="w3-container">
-    <h5>Booking No. {{booking.pk}}</h5>
+    <h5>Booking No. {{ booking.pk }}</h5>
     <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
       <tr>
         <td>Property:</td>
@@ -11,11 +11,11 @@
       </tr>
       <tr>
         <td>Check in date:</td>
-        <td class = 'w3-right'>{{booking.date_check_in}}</td>
+        <td class = 'w3-right'>{{ booking.date_check_in }}</td>
       </tr>
       <tr>
         <td>Check out date:</td>
-        <td class = 'w3-right'>{{booking.date_check_out}}</td>
+        <td class = 'w3-right'>{{ booking.date_check_out }}</td>
       </tr>
       <tr>
         <td>Guest name:</td>
