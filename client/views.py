@@ -14,12 +14,12 @@ class ClientDetail(DetailView):
     model = Client
     context_object_name = 'client'
 
-class CreateClient(FormView):
+class CreateClient(CreateView):
     template_name = 'client/client_edit.html'
     form_class = ClientForm
     success_url = '/client/'
 
-class EditClient(FormView):
+class EditClient(UpdateView):
     template_name = 'client/client_edit.html'
     form_class = ClientForm
     success_url = '/client/'
