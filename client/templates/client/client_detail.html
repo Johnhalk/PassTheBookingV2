@@ -25,7 +25,7 @@
     <h2 class="w3-wide">Properties linked to the client:</a></h2>
     <p class="w3-opacity"><i>Find clients properties below:</i><p>
   </div>
-  {% for property in properties %}
+  {% for property in client.property_set.all %}
     <div class="w3-container">
       <h5>Property No. {{property.pk}}</h5>
       <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">

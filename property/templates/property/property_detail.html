@@ -33,7 +33,7 @@
     <h2 class="w3-wide">Booking information</h2>
     <p class="w3-opacity"><i>Find booking histories below:</i><p>
   </div>
-  {% for booking in bookings %}
+  {% for booking in property.booking_set.all %}
     <div class="w3-container">
       <h5>Booking No. {{ booking.pk }}</h5>
       <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">

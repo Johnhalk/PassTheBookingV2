@@ -1,34 +1,24 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Booking
 from .forms import BookingForm
+from django.views.generic import ListView, CreateView, UpdateView, DetailView, FormView
 
-def booking_list(request):
-    bookings = Booking.objects.all()
-    return render(request, 'booking/booking_list.html', {'bookings': bookings})
+class BookingList(ListView):
+    model = Booking
+    context_object_name = 'bookings'
 
-def booking_detail(request, pk):
-    booking = get_object_or_404(Booking, pk=pk)
-    return render(request, 'booking/booking_detail.html', {'booking': booking})
+class BookingDetail(DetailView):
+    model = Booking
+    context_object_name = 'booking'
 
-def booking_new(request):
-    if request.method == 'POST':
-        form=BookingForm(request.POST)
-        if form.is_valid():
-            booking = form.save(commit=False)
-            booking.save()
-            return redirect('booking_detail', pk=booking.pk)
-    else:
-        form=BookingForm()
-        return render(request, 'booking/booking_edit.html', {'form': form})
+class CreateBooking(CreateView):
+    model = Booking
+    fields = ['property', 'date_check_in', 'date_check_out', 'guest_name']
+    template_name = 'booking/booking_edit.html'
+    success_url = '/booking/'
 
-def booking_edit(request, pk):
-    booking = get_object_or_404(Booking, pk=pk)
-    if request.method == "POST":
-        form = BookingForm(request.POST, instance=booking)
-        if form.is_valid():
-            booking = form.save(commit=False)
-            booking.save()
-            return redirect('booking_detail', pk=booking.pk)
-    else:
-        form = BookingForm(instance=booking)
-    return render(request, 'booking/booking_edit.html', {'form': form})
+class EditBooking(UpdateView):
+    model = Booking
+    fields = ['property', 'date_check_in', 'date_check_out', 'guest_name']
+    template_name = 'booking/booking_edit.html'
+    success_url = '/booking/'
