@@ -108,6 +108,7 @@ $ python --version
 
 Activate the virtual environment with the following in the command-line:
 ```
+python3 -m venv myvenv
 source myvenv/bin/activate
 ```
 Update to the latest version of pip:
